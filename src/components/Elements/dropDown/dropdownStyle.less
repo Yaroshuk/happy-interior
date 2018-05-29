@@ -1,0 +1,33 @@
+.dropDownContainer {
+  position: relative;
+}
+
+.commonDropDown {
+  top: 50px;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 2px rgba(0, 0, 0, 0.38);
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
+  max-height: 650px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+  text-align: left;
+  border-radius: 0.1rem;
+  border: 1px solid #cfd8dc;
+  font-size: 0.875rem;
+  color: #263238;
+  & > a {
+	padding: 10px;
+	display: block;
+	color: black;
+	&:hover{
+	  background: rgba(0, 0, 0, .05);
+	}
+	&:not(:last-of-type){
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+  }
+}

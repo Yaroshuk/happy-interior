@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AddItemButton {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: lightgreen;
+  color: black;
+  font-weight: bold;
+  max-width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: .1s ease-in-out all;
+  &:hover {
+	transform: scale(1.1);
+  }
+}
+.limitWidth {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 100px;
+}
+.mainImage {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 150px;
+  .inner {
+	display: flex;
+	align-items: end;
+  }
+  .storeLogo {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center center;
+	margin: -75px 0
+  }
+}
+.buttonsRow {
+  display: flex;
+  .btn {
+	border: 1px solid black;
+	padding: 10px;
+	width: 150px;
+	margin: 0 5px;
+	text-align: center;
+	transition: .1s ease-in-out all;
+	font-weight: bold;
+	cursor: pointer;
+	&:hover {
+	  background: black;
+	  color: white;
+	}
+  }
+}

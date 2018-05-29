@@ -1,0 +1,108 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxBorder {
+  background: white;
+  border: 1px solid black;
+}
+.myStores {
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 280px;
+  margin-bottom: 50px;
+  img {
+	border-radius: 50%;
+	margin-right: 10px;
+  }
+  h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+  }
+  span {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin-bottom: 10px;
+	a {
+	  border: 1px solid black;
+	  width: 100%;
+	  display: flex;
+	  align-items: center;
+	  padding: 10px;
+	  font-size: 1.2em;
+	  color: black;
+	  font-weight: bold;
+	  transition: .1s ease-in-out all;
+	  &:hover {
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid gray;
+	  }
+	}
+  }
+}
+.createStore {
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 280px;
+  margin-bottom: 50px;
+  padding-bottom: 0;
+  h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+  }
+  .form {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	justify-content: stretch;
+	.image {
+	  background: black;
+	  height: 50px;
+	  width: 50px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  border-radius: 50%;
+	  margin-right: 10px;
+	}
+	input {
+	  border: 1px solid black;
+	  padding: 10px;
+	  flex-grow: 1;
+	}
+  }
+  .createButton {
+	margin-top: 40px;
+	margin-bottom: 0;
+	margin-right: -30px;
+	margin-left: -30px;
+	width: calc(~"100% + 40px");
+	padding: 10px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+}
+.submit {
+  padding: 10px 20px;
+  background: gray;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: .2s ease-in-out all;
+  max-width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+.submit:hover {
+  transform: scale(1.1);
+}
